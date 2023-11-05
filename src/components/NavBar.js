@@ -1,9 +1,13 @@
-import CartWidget from "./CartWidget";
+import Link from "./Link";
 
 function NavBar() {
-    return <h1 className="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    return <div className="navbar-start">
+        <Link href="" text="Inicio"/>
+        <Link href="" text="Remeras"/>
+        <Link href="" text="Buzos"/>
+        <Link href="" text="Gorras"/>
+        <Link href="" text="¿Quienes somos?"/>
+    </div>
 }
 
 export default NavBar;
