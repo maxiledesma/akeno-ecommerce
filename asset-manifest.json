@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/akeno-ecommerce/static/css/main.7c8e7d24.css",
-    "main.js": "/akeno-ecommerce/static/js/main.637e99f6.js",
+    "main.css": "/akeno-ecommerce/static/css/main.7f41e6dd.css",
+    "main.js": "/akeno-ecommerce/static/js/main.30d88af1.js",
     "static/media/logo.png": "/akeno-ecommerce/static/media/logo.efd2e34ce7827d93c1ca.png",
     "index.html": "/akeno-ecommerce/index.html",
-    "main.7c8e7d24.css.map": "/akeno-ecommerce/static/css/main.7c8e7d24.css.map",
-    "main.637e99f6.js.map": "/akeno-ecommerce/static/js/main.637e99f6.js.map"
+    "main.7f41e6dd.css.map": "/akeno-ecommerce/static/css/main.7f41e6dd.css.map",
+    "main.30d88af1.js.map": "/akeno-ecommerce/static/js/main.30d88af1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c8e7d24.css",
-    "static/js/main.637e99f6.js"
+    "static/css/main.7f41e6dd.css",
+    "static/js/main.30d88af1.js"
   ]
 }
