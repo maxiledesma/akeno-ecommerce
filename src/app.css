@@ -6,4 +6,19 @@ body {
 .logo img {
   width: 200px;
 }
+.cart .cart-wrapper {
+  position: relative;
+}
+.cart .cart-wrapper .cart-item-counter {
+  position: absolute;
+  background: black;
+  color: white;
+  font-size: 11px;
+  line-height: 1;
+  padding: 3px 5px;
+  border-radius: 5px;
+  bottom: 5px;
+  right: 5px;
+  text-align: center;
+}
 /*# sourceMappingURL=app.css.map */
