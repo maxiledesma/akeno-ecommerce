@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
-import Header from "./components/Header";
-import ItemListContainer from "./components/ItemListContainer";
+import Header from "./components/Header/Header";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 import "bulma/css/bulma.css"
 

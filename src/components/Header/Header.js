@@ -1,6 +1,6 @@
-import TopHeader from "./TopHeader";
-import NavBar from "./NavBar";
-import CartWidget from "./CartWidget";
+import TopHeader from "./TopHeader/TopHeader";
+import NavBar from "./NavBar/NavBar";
+import CartWidget from "./CartWidget/CartWidget";
 
 function Header() {
     return <header className="mb-4 has-background-grey-lighter">
