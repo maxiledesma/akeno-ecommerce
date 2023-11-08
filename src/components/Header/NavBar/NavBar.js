@@ -1,4 +1,4 @@
-import Link from "./Link";
+import Link from "./Link/Link";
 
 function NavBar() {
     return <div className="navbar-start">
