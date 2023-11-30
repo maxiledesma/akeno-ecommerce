@@ -3,7 +3,7 @@ import NavBar from "./NavBar/NavBar";
 import CartWidget from "./CartWidget/CartWidget";
 
 function Header() {
-    return <header className="mb-4 has-background-grey-lighter">
+    return <header className="akeno-header mb-4 has-background-grey-lighter">
             <div className="container header-top pt-4 pb-4">
                 <TopHeader/>
             </div>
