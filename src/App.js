@@ -1,8 +1,6 @@
 // Components
 import { Helmet } from "react-helmet";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 
 // Pages
 import Layout from "./pages/Layout";
@@ -10,6 +8,13 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import Product from "./pages/Product";
 import Error404 from "./pages/Error404";
+import Checkout from "./pages/Checkout";
+import Cart from "./pages/Cart";
+import MyAccount from "./pages/MyAccount";
+import Orders from "./pages/Orders";
+import Success from "./pages/Success";
+import Login from "./pages/Login";
+import OrderDetail from "./pages/OrderDetail";
 
 import "bulma/css/bulma.css"
 
@@ -25,7 +30,13 @@ function App() {
                     <Route index element={<Home/>}/>
                     <Route path="category/:categoryId" element={<Category/>}/>
                     <Route path="product/:productId" element={<Product/>}/>
-
+                    <Route path="checkout" element={<Checkout/>}/>
+                    <Route path="cart" element={<Cart/>}/>
+                    <Route path="my-account" element={<MyAccount/>}/>
+                    <Route path="my-account/orders" element={<Orders/>}/>
+                    <Route path="my-account/order/:orderId" element={<OrderDetail/>}/>
+                    <Route path="success" element={<Success/>}/>
+                    <Route path="login" element={<Login/>}/>
                     <Route path="*" element={<Error404/>}/>
                 </Route>
             </Routes>
