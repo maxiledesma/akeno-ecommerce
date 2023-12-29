@@ -1,6 +1,7 @@
 // Components
 import { Helmet } from "react-helmet";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {CartProvider} from "./providers/CartProvider";
 
 // Pages
 import Layout from "./pages/Layout";
@@ -25,21 +26,23 @@ function App() {
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
         </Helmet>
         <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout/>}>
-                    <Route index element={<Home/>}/>
-                    <Route path="category/:categoryId" element={<Category/>}/>
-                    <Route path="product/:productId" element={<Product/>}/>
-                    <Route path="checkout" element={<Checkout/>}/>
-                    <Route path="cart" element={<Cart/>}/>
-                    <Route path="my-account" element={<MyAccount/>}/>
-                    <Route path="my-account/orders" element={<Orders/>}/>
-                    <Route path="my-account/order/:orderId" element={<OrderDetail/>}/>
-                    <Route path="success" element={<Success/>}/>
-                    <Route path="login" element={<Login/>}/>
-                    <Route path="*" element={<Error404/>}/>
-                </Route>
-            </Routes>
+            <CartProvider>
+                <Routes>
+                    <Route path="/" element={<Layout/>}>
+                        <Route index element={<Home/>}/>
+                        <Route path="category/:categoryId" element={<Category/>}/>
+                        <Route path="product/:productId" element={<Product/>}/>
+                        <Route path="cart" element={<Cart/>}/>
+                        <Route path="checkout" element={<Checkout/>}/>
+                        <Route path="my-account" element={<MyAccount/>}/>
+                        <Route path="my-account/orders" element={<Orders/>}/>
+                        <Route path="my-account/order/:orderId" element={<OrderDetail/>}/>
+                        <Route path="success" element={<Success/>}/>
+                        <Route path="login" element={<Login/>}/>
+                        <Route path="*" element={<Error404/>}/>
+                    </Route>
+                </Routes>
+            </CartProvider>
         </BrowserRouter>
     </div>
 }
