@@ -1,11 +1,9 @@
-import {useState} from "react";
+import {useState, useContext} from "react";
+import {useCart} from "../../../providers/CartProvider";
 
-export default function ItemDetail( {product} ) {
-    const {image, title, description, price, rating} = product;
-
-    function handleQtyToAdd() {
-
-    }
+const ItemDetail = ({ id, description, sku, title, image, price }) => {
+    const {totalQuantity, addItemToCart} = useCart();
+    console.log({totalQuantity});
 
     return (<div className="container pdp mb-6 mt-4">
         <div className="inner image"><img src={image} alt={title}/></div>
@@ -18,7 +16,9 @@ export default function ItemDetail( {product} ) {
 
                 </div>
 
-                <button className="button detail-button">Añadir al carrito</button>
+                <button onClick={() => addItemToCart({ id: {id}, name: {title}, quantity: 1 })} className="button detail-button">
+                    Añadir al carrito
+                </button>
             </div>
 
 
@@ -36,3 +36,5 @@ export default function ItemDetail( {product} ) {
     </div>
     );
 }
+
+export default ItemDetail;

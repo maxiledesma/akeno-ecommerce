@@ -17,15 +17,15 @@ function NavBar() {
     }, []);
 
     return <div className="navbar-start">
-        <Link className="navbar-button" to={`/`}>Inicio</Link>
+        <Link className="navbar-item" to={`/`}>Inicio</Link>
 
         {categories.map((category) =>{
             return (
-                <Link key={category.id} className="navbar-button" to={`/category/${category.id}`}>{category.title}</Link>
+                <Link key={category.id} className="navbar-item" to={`/category/${category.id}`}>{category.title}</Link>
             )
         })}
 
-        <Link className="navbar-button" to={``}>¿Quienes somos?</Link>
+        <Link className="navbar-item" to={``}>¿Quienes somos?</Link>
     </div>
 }
 

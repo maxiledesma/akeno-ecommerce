@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 
-function Item (params) {
-    const {id, title, image, price} = params.product;
+const Item = ({ id, sku, title, image, price }) => {
 
     return (
         <div key={id} className="product">
@@ -14,7 +13,7 @@ function Item (params) {
             </div>
             <Link className="detail-button" to={`/product/${id}`}>Detalle</Link>
         </div>
-    )
-}
+    );
+};
 
 export default Item;

@@ -3,10 +3,10 @@ import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailCon
 
 export default function Product() {
 
-    const {productId} = useParams();
+    const {sku} = useParams();
 
 
     return (
-        <ItemDetailContainer id={productId}/>
+        <ItemDetailContainer sku={sku}/>
     )
 }

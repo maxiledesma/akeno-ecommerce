@@ -1,10 +1,15 @@
+import {Link} from 'react-router-dom';
+import {useCart} from "../../../providers/CartProvider";
+
 function CartWidget() {
-    return <div className="navbar-end cart">
-        <a className="navbar-button cart-wrapper">
+    const {totalQuantity} = useCart();
+
+    return (<div className="navbar-end cart">
+        <Link className="navbar-item  cart-wrapper" to={`/cart`}>
             <span className="material-symbols-rounded">shopping_cart</span>
-            <div className="cart-item-counter">0</div>
-        </a>
-    </div>
+            <div className="cart-item-counter">{totalQuantity}</div>
+        </Link>
+    </div>)
 }
 
 export default CartWidget;
